@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Personal</title>
+    
+    <!-- Agregamos Bootstrap desde CDN para darle mejor diseño -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="styleFP.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <!-- Formulario con sombra y diseño elegante -->
+        <form class="row g-3 shadow p-4 bg-white rounded">
+            <h2 class="text-center">Formulario Personal</h2>
+
+            <!-- Campo para ingresar el primer nombre -->
+            <div class="col-md-6">
+                <label class="form-label">Primer Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <!-- Campo para ingresar el apellido -->
+            <div class="col-md-6">
+                <label class="form-label">Primer Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+            </div>
+
+            <!-- Campo para el nombre de usuario con @ al inicio -->
+            <div class="col-md-6">
+                <label class="form-label">Nombre de Usuario</label>
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+                </div>
+            </div>
+
+            <!-- Campo para el correo electrónico -->
+            <div class="col-md-6">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" required>
+            </div>
+
+            <!-- Campo para ingresar la ciudad -->
+            <div class="col-md-6">
+                <label class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad de residencia" required>
+            </div>
+
+            <!-- Selección de estado con un dropdown -->
+            <div class="col-md-6">
+                <label class="form-label">Estado</label>
+                <select class="form-select" id="estado" required>
+                    <option value="" selected disabled>Seleccione...</option>
+                    <option>San Miguel</option>
+                    <option>San Salvador</option>
+                    <option>Santa Ana</option>
+                </select>
+            </div>
+
+            <!-- Campo para el código postal -->
+            <div class="col-md-6">
+                <label class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="codigo_postal" placeholder="Ej: 03301" required>
+            </div>
+
+            <!-- Checkbox para aceptar los términos y condiciones -->
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                    <label class="form-check-label">Acepto los términos y condiciones</label>
+                </div>
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <div class="col-12 text-center">
+                <button class="btn btn-primary w-100" type="submit">Enviar Formulario</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
